@@ -1,0 +1,52 @@
+:root {
+  --black: #000;
+  --dark: #4e443a;
+  --font-size: 20px;
+  --border-radius: 10px;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.anzeige {
+  background-color: rgb(201, 201, 201);
+  padding: 15px;
+  width: 250px;
+  text-align: right;
+  font-size: var(--font-size);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+button {
+  padding: 10px;
+  width: 67px;
+  height: 45px;
+  margin-top: 10px;
+  background-color: rgb(194, 194, 194);
+  color: var(--black);
+  font-size: var(--font-size);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(182, 178, 178);
+}
+
+button:active {
+  background-color: rgb(136, 136, 136);
+}
+
+.border-bottom-left {
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.border-bottom-right {
+  border-bottom-right-radius: var(--border-radius);
+}
+
+#r1-1,
+#r5-1 {
+  width: 138px;
+}

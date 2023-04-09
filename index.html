@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Taschenrechner</title>
+  </head>
+  <body>
+    <div class="anzeige">
+      <p id="ausgabe">0</p>
+    </div>
+    <div class="reihe-1">
+      <button id="r1-1" onclick="zurucksetzen()">C</button>
+      <button id="r1-3" onclick="prozent()">%</button>
+      <button id="r1-4" onclick="aktionAusfuhren('/')">/</button>
+    </div>
+    <div class="reihe-2">
+      <button id="r2-1" onclick="aktionAusfuhren(7)">7</button>
+      <button id="r2-2" onclick="aktionAusfuhren(8)">8</button>
+      <button id="r2-3" onclick="aktionAusfuhren(9)">9</button>
+      <button id="r2-4" onclick="aktionAusfuhren('*')">X</button>
+    </div>
+    <div class="reihe-3">
+      <button id="r3-1" onclick="aktionAusfuhren(4)">4</button>
+      <button id="r3-2" onclick="aktionAusfuhren(5)">5</button>
+      <button id="r3-3" onclick="aktionAusfuhren(6)">6</button>
+      <button id="r3-4" onclick="aktionAusfuhren('-')">-</button>
+    </div>
+    <div class="reihe-4">
+      <button id="r4-1" onclick="aktionAusfuhren(1)">1</button>
+      <button id="r4-2" onclick="aktionAusfuhren(2)">2</button>
+      <button id="r4-3" onclick="aktionAusfuhren(3)">3</button>
+      <button id="r4-4" onclick="aktionAusfuhren('+')">+</button>
+    </div>
+    <div class="reihe-5">
+      <button id="r5-1" class="border-bottom-left" onclick="aktionAusfuhren(0)">0</button>
+      <button id="r5-2" onclick="aktionAusfuhren('.')">.</button>
+      <button id="r5-3" class="border-bottom-right" onclick="resultat()">=</button>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
